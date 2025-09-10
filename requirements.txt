@@ -1,0 +1,29 @@
+# PPF 3D Navier-Stokes Computational Implementation
+# Requirements for reproducing the breakthrough results
+
+# Core scientific computing
+numpy>=1.24.0
+scipy>=1.10.0
+matplotlib>=3.6.0
+
+# Optional but recommended for performance
+numba>=0.57.0
+
+# For Jupyter notebooks (if present)
+jupyter>=1.0.0
+ipython>=8.0.0
+
+# Development and testing
+pytest>=7.0.0
+
+# Installation Instructions:
+# 1. Create virtual environment: python -m venv venv
+# 2. Activate: source venv/bin/activate (Linux/Mac) or venv\Scripts\activate (Windows)
+# 3. Install: pip install -r requirements.txt
+# 4. Run main simulation: python test_3d_symplectic.py
+
+# Key Results to Reproduce:
+# - Stable evolution for t > 2.0 time units
+# - Energy dissipation from initial to near-zero
+# - 4-fold radial symmetry (n_r=4) stability constraint
+# - Perfect energy conservation curves matching theory
